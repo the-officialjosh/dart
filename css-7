@@ -1,0 +1,6 @@
+﻿@font-face {
+  font-family: 'Viga';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/viga/v14/xMQbuFFdSaiXzQUpCw-2.ttf) format('truetype');
+}
