@@ -44,7 +44,7 @@
             $(".scroll").click(function(event) {
                 event.preventDefault();
                 $("html,body").animate({
-                        scrollTop: $(this.hash).offset().top
+                        scrollTop: $(this.hash).offset().top,
                     },
                     1000
                 );
@@ -64,11 +64,11 @@
                 <ul>
                     <!-- <li><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+1 315 541 4526</a></li> -->
                     <li>
-                        <a href="mailto:info@dartfreightline.com"><span
+                        <a href="mailto:info@dartfreightlogistics.com"><span
                   class="glyphicon glyphicon-envelope"
                   aria-hidden="true"
                 ></span
-                >info@dartfreightline.com</a
+                >info@dartfreightlogistics.com</a
               >
             </li>
             <span style="float: right" id="google_translate_element"></span>
@@ -107,9 +107,9 @@
             <div id="small-dialog" class="mfp-hide">
                 <div class="search-top">
                     <div class="login_pop">
-                        <form action="adm/methods.php?order=subbbt" method="post">
+                        <form action="track.html">
                             <input type="submit" value="" />
-                            <input type="text" name="track" value="Type Parcel Tracking #..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+                            <input type="text" id="tracker" onblur="myFunction();" />
                         </form>
                     </div>
                 </div>
@@ -316,11 +316,11 @@
                 <div class="strip"></div>
                 <ul class="con-icons">
                     <li>
-                        <a href="mailto:info@dartfreightline.com"><span
+                        <a href="mailto:info@dartfreightlogistics.com"><span
                   class="glyphicon glyphicon-envelope"
                   aria-hidden="true"
                 ></span
-                >info@dartfreightline.com</a
+                >info@dartfreightlogistics.com</a
               >
             </li>
             <!--                 <li><a><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+1 315 541 4526</a></li>
@@ -358,7 +358,7 @@
                     we’re here for you every step of the way. Whether you’re shipping for the first time or brushing up on the latest services and tools, you’ll find all the information you need to get the job done.
                 </p>
                 <p class="copy-right">
-                    © 2021 Dart Freight Logistics. All rights reserved | Design by
+                    © 2022 Dart Freight Logistics. All rights reserved | Design by
                     <a href="">Dart Freight Logistics</a>
                 </p>
             </div>

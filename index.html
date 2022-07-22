@@ -54,6 +54,7 @@
 
     <!--start-date-piker-->
     <script src="js/jquery-ui.js"></script>
+    <script defer src="js/script.js"></script>
     <script>
         $(function() {
             $("#datepicker,#datepicker1").datepicker();
@@ -123,7 +124,7 @@
                     <div class="login_pop">
                         <form action="track.html">
                             <input type="submit" value="" />
-                            <input type="text" name="track" value="Type Parcel Tracking #..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+                            <input type="text" id="tracker" onblur="myFunction();" />
                         </form>
                     </div>
                 </div>
@@ -278,10 +279,18 @@
           data-wow-delay="0.3s"
         >
           <h3>Start Tracking</h3>
-          <form action="track.html">
-            <input type="text" name="track" required="" />
+          <form method="post">
+            <input type="text" id="tracker" required="" />
 
-            <input type="submit" value="Track" />
+            <button
+              type="button"
+              id="trackbutton"
+              onclick="myFunction();"
+              style="padding: 1rem 3rem; background-color: brown; color: white"
+            >
+              Submit
+            </button>
+            <!---- Including PHP File Here ---->
           </form>
         </div>
         <div class="clearfix"></div>
